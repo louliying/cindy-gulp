@@ -1,0 +1,13 @@
+/* extend */
+
+//$common:sprite-map("common/*.png",$spacing:5px,$layout: diagonal);
+/* $preorder:sprite-map("_preorder.png",$spacing:5px);
+%preorderMaps{
+    $width:sprite-width($preorder);
+    $height:sprite-height($preorder);
+    background-image:$preorder;
+    background-repeat:no-repeat;
+    background-size:rem-calc($width $height);
+} */
+
+$imgPath:"/img/";

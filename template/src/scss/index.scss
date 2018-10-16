@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import "base/_common";
+$indexIcon: creatSprite("./img/index/_index/*.png");
+body{
+	background: lightseagreen;
+	color: #fff;
+}
+.box{
+    width: rem-calc(800px);
+    height: rem-calc(800px);
+    margin: 0 auto;
+    padding:  rem-calc(20px);
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+    transition: all 0.2s linear;
+    background: #f60;
+    i{
+        display:block;
+        @include iconItemRem($indexIcon, 'like');
+        width: rem-calc(120px);
+        height: rem-calc(120px);
+    }
+}

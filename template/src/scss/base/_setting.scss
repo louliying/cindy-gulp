@@ -1,0 +1,35 @@
+@charset "UTF-8";
+// Author:康明飞 Description: 基本设置
+// $rem-base: 100px;
+$enable-unit-vw: false;
+$vm-base:750px;
+
+// 图片路径
+$imgurl-base: "src/sjdb/mobile/";
+// cms 背景图片路径
+// $imgurl-base:'http://s3.cximg.com/cms/carmall_Html5/resource/activity/final2016/images';
+
+// rem-calc的基础值
+$rem-base: 100px;
+// 全局设置 map-get($cxGlobal,'color-bg');
+$cxGlobal: (
+	'color-bg': #eff2f7, //页面背景色
+	'color-main': #c71445, //主色调红色
+	'color-txt-3': #333, //主体字体色
+	'color-txt-6': #666, //弱一点的字体色
+	'color-txt-9': #999, //more的字体色
+	'color-border': #e7e7e7, //边框线的颜色
+);
+
+%clearfix{
+	zoom:1;
+	&:after{
+		content:".";
+		height:0;
+		visibility:hidden;
+		display:block;
+		clear:both;
+		font-size:0;
+		line-height:0;
+	}
+}
