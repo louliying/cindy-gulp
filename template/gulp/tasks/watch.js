@@ -1,8 +1,8 @@
-import gulp from 'gulp';
-import browserSync from 'browser-sync';
-import runSequence from 'run-sequence';
+var gulp = require('gulp');
+var browserSync = require('browser-sync');
+var runSequence = require('run-sequence');
 
-import {sourcePath, distPath} from '../config';
+var {sourcePath, distPath} = require('../config');
 
 var reload =  browserSync.reload;
 
@@ -42,9 +42,10 @@ gulp.task('watch', function () {
         browserSync.reload
     });
 
-    var watcher4 = gulp.watch(sourcePath + '/js/**/*.js', ['concat']);
+    var watcher4 = gulp.watch(sourcePath + '/js/**/*.js', ['babel']);
     watcher4.on('change', (event) => {
         console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+        runSequence(['babel'], 'concat');
          browserSync.reload
     });
     gulp.watch([distPath + '/*.html', distPath + '/js/**/*.js', distPath + '/css/**/*.css']).on('change', browserSync.reload);

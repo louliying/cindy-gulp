@@ -1,8 +1,8 @@
-import gulp from 'gulp';
-import cssmin from 'gulp-cssmin';
-import rename from 'gulp-file-rename';
+var gulp = require('gulp');
+var cssmin = require('gulp-cssmin');
+var rename = require('gulp-file-rename');
 
-import {sourcePath, distPath} from '../config';
+var {sourcePath, distPath} = require('../config');
 
 gulp.task('cssmin', ()=> {
     return gulp.src([sourcePath + '/_build/**/*.css'])

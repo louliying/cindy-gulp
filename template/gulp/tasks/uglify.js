@@ -1,16 +1,19 @@
-import gulp from 'gulp';
-import uglify from 'gulp-uglify';
-import pump from 'pump';
+var gulp = require('gulp');
+var uglify = require('gulp-uglify');
+var pump = require('pump');
+var rename = require('gulp-rename');
 
-import {sourcePath, distPath} from '../config';
+var {sourcePath, distPath} = require('../config');
 
 gulp.task('uglify', () => {
-    var options = {
-
-    };
-
-    return gulp.src(distPath + '/js/**/*.js')
-                        .pipe(uglify(options))
-                        .pipe(gulp.dest(distPath + '/js/'));
-
+    //return pump([
+        //gulp.src( sourcePath + '/concat/**/*.js'),
+        //uglify(),
+        //pipe(rename({ suffix: '.min' })),
+        //gulp.dest(distPath + '/')
+    //]
+    return gulp.src(sourcePath + '/concat/**/*.js')
+        .pipe(uglify())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest(distPath + '/'));
 });

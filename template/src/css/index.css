@@ -219,6 +219,159 @@ address, cite, dfn, em, var {
   zoom: 1;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
+.login-mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #000;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+.login-box {
+  /* width: 500px*/
+  width: 380px;
+  margin: 0 auto;
+  color: #333;
+}
+.login-box .title-box {
+  height: 60px;
+  line-height: 60px;
+  margin: 0 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.login-box .title-box h2 {
+  font-size: 16px;
+  color: #666666;
+  width: 300px;
+  font-weight: 600;
+}
+.login-box .login-form-main {
+  padding: 20px 40px;
+}
+.login-box .login-form-main h2.capital-h {
+  font-size: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: normal;
+}
+.login-box .login-form-main .login-ul {
+  padding-top: 20px;
+}
+.login-box .login-form-main .login-ul li {
+  padding-left: 85px;
+  position: relative;
+}
+.login-box .login-form-main .login-ul li .selectStyle {
+  height: 30px;
+  line-height: 30px;
+  width: 240px;
+}
+.login-box .login-form-main .login-ul li.item-li {
+  margin-bottom: 14px;
+  height: 36px;
+  line-height: 36px;
+}
+.login-box .login-form-main .login-ul li.item-li select {
+  width: 210px;
+  padding-left: 8px;
+  height: 36px;
+  font-size: 14px;
+  color: #333;
+}
+.login-box .login-form-main .login-ul li.item-li select.error {
+  border-color: #c71445;
+}
+.login-box .login-form-main .login-ul li.item-li input {
+  width: 210px;
+  height: 36px;
+  border: 1px solid #d9d9d9;
+  text-indent: 10px;
+  font-size: 14px;
+  color: #333;
+}
+.login-box .login-form-main .login-ul li.item-li input.error {
+  border-color: #c71445;
+}
+.login-box .login-form-main .login-ul li.item-li input.code-input {
+  width: 110px;
+  border-right: none;
+}
+.login-box .login-form-main .login-ul li.item-li .code-btn {
+  position: relative;
+  top: 2px;
+  left: -1px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: #c71445;
+  width: 100px;
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+  cursor: pointer;
+}
+.login-box .login-form-main .login-ul li.item-li .code-btn.disable {
+  background-color: #ccc;
+  color: #999;
+  cursor: default;
+}
+.login-box .login-form-main .login-ul li.item-li .l-label {
+  position: absolute;
+  width: 60px;
+  height: 36px;
+  line-height: 36px;
+  text-align: right;
+  font-size: 14px;
+  left: 12px;
+  color: #333;
+}
+.login-box .login-form-main .login-ul li.item-btn {
+  padding: 10px 0 10px 85px;
+}
+.login-box .login-form-main .login-ul li.item-btn .submit-btn {
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #c71445;
+  border: 0;
+  border-radius: 2px;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.login-box .login-form-main .login-ul li.item-btn .submit-btn:hover {
+  text-decoration: none;
+}
+.login-box .login-form-main .login-ul li.item-protocol {
+  padding-top: 8px;
+  font-size: 12px;
+}
+.login-box .login-form-main .login-ul li.item-protocol a {
+  color: #c71445;
+  text-decoration: none;
+}
+.login-box .login-form-main .login-ul li.item-error {
+  height: 18px;
+}
+.login-box .login-form-main .login-ul li.item-error .err-txt {
+  color: #c71445;
+}
+
 body {
   background: lightseagreen;
   color: #fff;
@@ -245,4 +398,181 @@ body {
   background-size: 0.6rem 1.29rem;
   width: 1.2rem;
   height: 1.2rem;
+}
+
+.open-first {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -210px;
+  margin-top: -230px;
+  width: 420px;
+  height: 460px;
+  z-index: 201;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  /* background: url(../../img/index/open-first.png) 0 0 no-repeat; */
+}
+.open-first .go-opengift {
+  position: absolute;
+  width: 100%;
+  height: 340px;
+  left: 0;
+  top: 0;
+}
+.open-first .dont-need {
+  position: absolute;
+  left: 90px;
+  top: 359px;
+  width: 242px;
+  height: 51px;
+  text-indent: -99999px;
+}
+
+.open-second {
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -210px;
+  margin-top: -230px;
+  width: 420px;
+  height: 460px;
+  z-index: 201;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  /* background: url(../../img/index/open-second1.png) 0 0 no-repeat; */
+}
+.open-second .close {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  width: 38px;
+  height: 38px;
+}
+.open-second .go-btn {
+  position: absolute;
+  left: 85px;
+  bottom: 30px;
+  width: 240px;
+  height: 54px;
+}
+
+.open-second-logined {
+  margin-top: -180px;
+  height: 360px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  /* background: url(../../img/index/open-second2.png) 0 0 no-repeat; */
+}
+
+.open-third {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -210px;
+  margin-top: -230px;
+  width: 420px;
+  height: 460px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  /* background: url(../../img/index/open-third.png) 0 0 no-repeat; */
+  z-index: 201;
+}
+.open-third .close {
+  position: absolute;
+  right: 24px;
+  top: 0;
+  width: 50px;
+  height: 50px;
+}
+.open-third .name {
+  display: block;
+  padding: 56px 10px 20px;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+.open-third .code {
+  display: block;
+  line-height: 24px;
+  font-size: 16px;
+  text-align: center;
+}
+.open-third .code .copy {
+  display: inline-block;
+  margin-left: 20px;
+  width: 46px;
+  height: 26px;
+  text-align: center;
+  border: 1px solid #ff0057;
+  cursor: pointer;
+}
+.open-third .go-link {
+  display: block;
+  position: absolute;
+  width: 170px;
+  height: 40px;
+  left: 122px;
+  top: 234px;
+}
+.open-third .des {
+  display: none;
+}
+
+.open-third-error {
+  margin-top: -180px;
+  height: 360px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  /* background: url(../../img/index/open-third2.png) 0 0 no-repeat; */
+}
+.open-third-error .close {
+  width: 50px;
+  height: 50px;
+  top: 30px;
+  right: 24px;
+}
+.open-third-error .des {
+  display: block;
+  width: 260px;
+  margin: 80px auto 0;
+  line-height: 36px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+.open-third-error .go-link,
+.open-third-error .name,
+.open-third-error .code {
+  display: none;
+}
+
+.banner {
+  position: fixed;
+  right: 83px;
+  bottom: 34px;
+  width: 100px;
+  height: 82px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  /* background: url(../../img/index/banner.png) 0 0 no-repeat; */
+  z-index: 202;
+  cursor: pointer;
+}
+
+.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  z-index: 200;
 }

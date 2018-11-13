@@ -1,6 +1,6 @@
-import gulp from 'gulp';
+var gulp = require('gulp');
 
-import {sourcePath, distPath} from '../config';
+var {sourcePath, distPath} = require('../config');
 
 const sourceFiles = [ sourcePath + '/img/**/*.*'];
 const destination = distPath + '/img';

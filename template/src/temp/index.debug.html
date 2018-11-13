@@ -1,18 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>index</title>
-	<!-- inject:css -->
-	<!-- endinject -->
-</head>
-<body>
-	<inline src="common/header.include.html" />
-	<!--test | start-->
-	<inline src="index/floor1.include.html" />
-	<!--test | end-->
-	<inline src="common/footer.include.html" />
-	<!-- inject:js -->
-	<!-- endinject -->
-</body>
-</html>
+  <link rel="stylesheet" type="text/css"
+          href="//s3.cximg.com/promotionweb/??css/pc/common/reset.min.css,css/pc/common/Fastlogin/common.min.css,css/pc/common/Fastlogin/dialog.min.css,css/pc/common/Fastlogin/check-dialog.min.css,css/pc/common/msg/msg_style.min.css,common/pc/css/carmall/dialog.min.css?t=201704131358.css"/>
+<!-- inject:css -->
+<!-- endinject -->
+
+<div class="box"><i></i>我也雪碧图</div>
+<!--test | start-->
+<inline src="index/open-first.include.html" />
+<!-- <inline src="index/open-second.include.html" /> -->
+<!--   open-second-logined -->
+<div class="open-second js-open-second" style="display:none;">
+	<a href="javascript:;" class="close js-open-close"></a>
+	<inline src="../modules/leavemsg-login/leavemsg-login.include.html" />
+	<a href="javascript:;" class="go-btn js-cap-submit-btn"></a>
+</div>
+<inline src="index/open-third.include.html" />
+<!--test | end-->
+<div class="banner js-opem-banner" style="display:none;"></div>
+<div class="mask js-open-mask" style="display:none;"></div>
+<script>
+    window.sDomain = 'test.chexiangsit.com';
+    window.urlSuffix = 'opengift.htm';
+</script>
+<script type="text/javascript" src="http://s1.cximg.com/msweb02/resource/comm/js/jquery_1_8_3.min.js?t=1477043585000"></script>
+<script src="//i2.cximg.com/cms/carmall/resource/common/basic/baseutil.min.js"></script>
+<script src="//i2.cximg.com/cms/carmall/resource/common/basic/reg.min.js"></script>
+<script src="js/thirdLibs/es5-shim.min.js"></script>
+<script src="js/thirdLibs/es5-sham.min.js"></script>
+<!-- inject:js -->
+<!-- endinject -->
+
+<!-- <script src="js/thirdLibs/bluebird.js"></script>
+<script src="js/thirdLibs/clipboard.min.js"></script>
+<script src="js/ecar/ECar.easyDialog.js"></script>
+<script src="js/ecar/ECar.seriesSelect.js"></script>
+<script src="//i2.cximg.com/cms/carmall/resource/common/basic/baseutil.min.js"></script>
+<script src="//i2.cximg.com/cms/carmall/resource/common/basic/reg.min.js"></script>
+<script src="js/modules/leavemsg-login.js"></script>
+<script src="js/index/opengift.js"></script>
+<script src="js/index/index.js"></script> -->

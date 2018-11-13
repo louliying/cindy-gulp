@@ -1,7 +1,7 @@
-import gulp from 'gulp';
-import contentInclude from 'gulp-content-includer';
-import rename from 'gulp-file-rename';
-import {sourcePath, distPath} from '../config';
+var gulp = require('gulp');
+var contentInclude = require('gulp-content-includer');
+var rename = require('gulp-file-rename');
+var {sourcePath, distPath} = require('../config');
 
 gulp.task('include-html', ()=> {
     return gulp.src([

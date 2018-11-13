@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "base/_common";
+@import '../modules/leavemsg-login/scss/leavemsg-login';
 $indexIcon: creatSprite("./img/index/_index/*.png");
 body{
 	background: lightseagreen;
@@ -22,3 +23,178 @@ body{
         height: rem-calc(120px);
     }
 }
+// $indexIcon: creatSprite("./img/index/_index/*.png");
+// @include iconItemRem($indexIcon, 'like');
+.open-first{
+    display:none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -210px;
+    margin-top: -230px;
+    width: 420px;
+    height: 460px;
+    z-index: 201;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    /* background: url(../../img/index/open-first.png) 0 0 no-repeat; */
+    .go-opengift{
+        position: absolute;
+        width: 100%;
+        height: 340px;
+        left: 0;
+        top: 0;
+    }
+    .dont-need{
+        position: absolute;
+        left: 90px;
+        top: 359px;
+        width: 242px;
+        height: 51px;
+        text-indent: -99999px;
+    }
+}
+.open-second {
+    display:block;
+    position: fixed;
+    left: 50%;
+    top:50%;
+    margin-left: -210px;
+    margin-top: -230px;
+    width: 420px;
+    height: 460px;
+    z-index: 201;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    /* background: url(../../img/index/open-second1.png) 0 0 no-repeat; */
+    .close {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        width: 38px;
+        height: 38px;
+    }
+    .go-btn{
+        position: absolute;
+        left: 85px;
+        bottom: 30px;
+        width: 240px;
+        height: 54px;
+    }
+}
+.open-second-logined{
+    margin-top: -180px;
+    height: 360px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    /* background: url(../../img/index/open-second2.png) 0 0 no-repeat; */
+}
+
+.open-third {
+    display:none;
+    position: fixed;
+    left: 50%;
+    top:50%;
+    margin-left: -210px;
+    margin-top: -230px;
+    width: 420px;
+    height: 460px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    /* background: url(../../img/index/open-third.png) 0 0 no-repeat; */
+    z-index: 201;
+
+    .close{
+        position: absolute;
+        right:24px;
+        top:0;
+        width: 50px;
+        height: 50px;
+    }
+    .name{
+        display:block;
+        padding:56px 10px 20px;
+        font-size: 20px;
+        line-height: 40px;
+        text-align:center;
+    }
+    .code{
+        display:block;
+        line-height: 24px;
+        font-size: 16px;
+        text-align: center;
+        .copy{
+            display:inline-block;
+            margin-left: 20px;
+            width: 46px;
+            height: 26px;
+            text-align: center;
+            border:1px solid #ff0057;
+            cursor:pointer;
+        }
+    }
+    .go-link{
+        display:block;
+        position: absolute;
+        width: 170px;
+        height: 40px;
+        left: 122px;
+        top: 234px;
+    }
+    .des{
+        display:none;
+    }
+}
+.open-third-error{
+    margin-top: -180px;
+    height: 360px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    /* background: url(../../img/index/open-third2.png) 0 0 no-repeat; */
+    .close{
+        width: 50px;
+        height: 50px;
+        top:30px;
+        right: 24px;
+    }
+    .des{
+        display:block;
+        width: 260px;
+        margin: 80px auto 0;
+        line-height: 36px;
+        text-align: center;
+        font-size: 18px;
+        color: #333;
+    }
+    .go-link,
+    .name,
+    .code{
+        display:none;
+    }
+}
+.banner{
+    position: fixed;
+    right: 83px;
+    bottom: 34px;
+    width: 100px;
+    height: 82px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    /* background: url(../../img/index/banner.png) 0 0 no-repeat; */
+    z-index: 202;
+    cursor:pointer;
+}
+.mask {
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height:100%;
+    background-color:#000;
+    opacity: 0.6;
+    filter:alpha(opacity = 60);
+    z-index: 200;
+}
+

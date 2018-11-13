@@ -1,10 +1,12 @@
-import gulp from 'gulp';
-import concat from 'gulp-concat';
+var gulp = require('gulp');
+var concat = require('gulp-concat');
 
-import {sourcePath, distPath} from '../config';
+var {sourcePath, distPath} = require('../config');
 
 gulp.task('concat', ()=> {
-    return gulp.src(sourcePath + '/js/**/*.js')
+    return gulp.src(sourcePath + '/babel/**/*.js')
+    // return gulp.src(sourcePath + '/index/**/*.js')
                         .pipe(concat('index.js'))
-                        .pipe(gulp.dest(distPath + '/js/'));
+                         .pipe(gulp.dest(sourcePath + '/concat/js/'));
+                        // .pipe(gulp.dest(distPath + '/js/'));
 });

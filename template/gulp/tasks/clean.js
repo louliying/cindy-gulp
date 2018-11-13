@@ -1,7 +1,7 @@
-import gulp from 'gulp';
-import clean from 'del';
+var gulp = require('gulp');
+var clean = require('del');
 
-import {sourcePath, distPath} from '../config';
+var {sourcePath, distPath} = require('../config');
 
 gulp.task('clean', ()=> {
     // return gulp.src([sourcePath + '/_build/', distPath + '/img/**/_*/', !distPath + '/img/**/_*.png'])

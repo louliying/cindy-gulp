@@ -1,8 +1,8 @@
-import gulp from 'gulp';
-import browserSync from 'browser-sync';
-import compass from 'gulp-compass';
-import sourcemaps from 'gulp-sourcemaps';
-import {sourcePath, distPath} from '../config';
+var gulp = require('gulp');
+var browserSync = require('browser-sync');
+var compass = require('gulp-compass');
+var sourcemaps = require('gulp-sourcemaps');
+var {sourcePath, distPath} = require('../config');
 
 const reload = browserSync.reload;
 

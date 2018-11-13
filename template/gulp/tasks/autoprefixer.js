@@ -1,9 +1,9 @@
-import gulp from 'gulp';
-import sourcemaps from 'gulp-sourcemaps';
-import autoprefixer from 'gulp-autoprefixer';
-import postcss from'gulp-postcss';
+var gulp = require('gulp');
+var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
+var postcss = require('gulp-postcss');
 
-import {sourcePath, distPath} from '../config';
+var {sourcePath, distPath}  = require('../config');
 
 
 gulp.task('autoprefixer', () => {
