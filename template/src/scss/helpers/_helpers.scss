@@ -1,5 +1,4 @@
 @charset "UTF-8";
-// Author:康明飞 Description: 公共sass模块
 @mixin midia-query($res-min, $res-max){
   $query: "";
   @if $res-min != "" {
